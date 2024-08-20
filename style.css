@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: aliceblue;
+}
+.dashboard{
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+
+.dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dashboard .navigation img.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.dashboard .navigation div .materials-icons{
+    font-size: 30px;
+    color: #727272;
+}
+
+.dashboard .navigation div{
+    margin-top: 10px;
+    padding-right:  100px;
+    justify-content: space-between
+}
+
+.dashboard .main .search form{
+    position: relative;
+}
+
+.dashboard .main .search form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 10px 60px;
+    border: 1px solid #dadada;
+    background-color: rgba(0 0 0 / 0);
+}
+
+.dashboard .main .search form span{
+    position: absolute;
+    left: 15px;
+    top: 10px;color: #727272;
+}
+.dashboard .main .search .notification{
+    margin-top: 20px;
+}
+.dashboard .main .search .notification span:nth-child(1){
+    margin-right: 15px;
+    position: relative;
+}
+.dashboard .main .search .notification span:nth-child(1)::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: sandybrown;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+}
+
+.dashboard .main .title{
+    margin-right: 60px;
+    margin-left: 90px;
+    padding-right: 50px;
+}
+
+.dashboard .main .title .h1{
+    font-size: 35px;
+    line-height: 0px;
+}
+
+
+.dashboard .main .Embedded_Device .h2{
+    font-size: 20px;
+    line-height: 0;
+}
+
+.dashboard .main .Embedded_Device{
+    padding: 20px 20px 30px 60px;
+    background-color: gray;
+    box-shadow: 1px 1px 40px rgba(0 0 0 / .01);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.dashboard .main .Embedded_Device_Signals{
+    padding: 20px 20px 20px 60px;
+    background-color: gray;
+    box-shadow: 1px 1px 40px rgba(0 0 0 / .01);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.dashboard .secondary{
+    padding: 20px 20px 20px 60px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 40px rgba(0 0 0 / .01);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+@media only screen  and (min-width:786px){
+    .dashboard .main .name{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .dashboard .main .search{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .dashboard .main .search form{
+        margin-top: 10px;
+    }
+    section.main .Properties{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    section.main .Properties .Embedded_Device{
+        width: 47%;
+    }
+    section.main .Properties .Embedded_Device ul{
+        margin-top: 15px;
+    }
+
+    section.secondary{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: #ffffff;
+        padding-top: 70px;
+    }
+    section.secondary .chart{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    section .secondary{
+        display: block;
+    }
+    .dashboard .navigation{
+        width: 60px;
+        position: fixed;
+        z-index: 10;
+    }
+    section.main{
+        width: 50%;
+        margin-left: 90px;
+        margin-right: 20px;
+    }
+    section.secondary{
+        width: 20%;
+        padding-top: 0px;
+        position: fixed;
+        top: 20px;
+        right: 0px;
+    }
+    .dashboard .navigation div{
+        margin-top: 19vh;
+        margin-bottom: 19vh;
+    }
+    .dashboard .navigation div span{
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (min-width:1111px){
+    section.main .Properties .Embedded_Device{
+        width: 32%;
+    }
+    section.main{
+        width: 65%;
+    }
+}

@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Control APP</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\img.css">
+
+</head>
+<body>
+    <div class="dashboard"><!-- Dashboard-->
+        <section class="navigation"><!-- Navigation -->
+            <img src="css/OIP (1).jpeg" alt="device" class="logo">
+            
+            <div>
+                <button class="material-icons" data-status="dashboard">dashboard</button>
+                <button class="material-icons" data-status="task_alt">task_alt</button>
+                <button class="material-icons" data-status="pending">pending</button>
+                <button class="material-icons" data-status="running_with_errors">running_with_errors</button>
+                <button class="material-icons" data-status="done">done </button>
+            </div>
+
+        </section><!-- Navigation End-->
+
+        <section class="main"><!-- Main -->
+            <div class="search">
+                <form action=" ">
+                    <input type="text" name="search" id="searchDevice" placeholder="Devices">
+                    <span class="material-icons">search</span>
+                </form>
+
+                <div class="notification">
+                    <span class="material-icons">notifications</span>
+                    <span class="material-icons">edit</span>
+                </div>
+            </div>
+
+            <div class="title">
+                <h1>My Device Control</h1>        
+            </div>
+
+            <div class="Properties">
+                <div class="Embedded_Device" data-status ="material-icons" title="task">
+                    <div class="category"></div>
+                    <h2>Device Name</h2>
+                    <ul class="Embedded_System">
+                        <li>Washing Machine</li>
+                        <li>Microwave Oven</li>
+                        <li>Refrigerator</li>
+                    </ul>
+                </div>
+
+                <div class="Embedded_Device_Signals" data-status="material-icons" title="running_with_errors">
+                    <div class="category">
+                    <h2>Device Signals</h2>
+                    <ul class="Embedded System">
+                        <li>DIGITAL</li>
+                        <li>ANALOGUE</li>
+                    </ul>
+                    </div>
+                </div>
+
+            
+                <div class="Embedded_Device_Signals" data-status="material-icons" title="done">
+                    <div class="category">
+                    <h2>Device Status</h2>
+                    <ul class="Embedded_System">
+                        <li>OFF</li>
+                        <li>ON</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section><!-- Main End-->
+        <section class="Secondary"><!-- Secondary -->
+            <div class="chart">
+            <h2>Total Project</h2>
+            </div>
+
+        </section><!-- Secondary End-->
+
+    </div><!-- Dashboard End-->
+
+    <script src="css/dash.js"></script>
+
+</body>
+</html>
