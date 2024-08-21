@@ -14,11 +14,11 @@
             <img src="css/OIP (1).jpeg" alt="device" class="logo">
             
             <div>
-                <button class="material-icons" data-status="dashboard">dashboard</button>
-                <button class="material-icons" data-status="task_alt">task_alt</button>
-                <button class="material-icons" data-status="pending">pending</button>
-                <button class="material-icons" data-status="running_with_errors">running_with_errors</button>
-                <button class="material-icons" data-status="done">done </button>
+                <span class="material-icons" >dashboard</span>
+                <span class="material-icons" >task_alt</span>
+                <span class="material-icons" >pending</span>
+                <span class="material-icons" >running_with_errors</span>
+                <span class="material-icons" >done </span>
             </div>
 
         </section><!-- Navigation End-->
@@ -37,11 +37,20 @@
             </div>
 
             <div class="title">
-                <h1>My Device Control</h1>        
+                <h1>My Device Control</h1>
+
+                <label for="projects">Sort By</label>
+                <select name="projects" id="projectsFilter">
+                    <option value="">...</option>
+                    <option value="task">Task</option>
+                    <option value="running_with_errors">Errors</option>
+                    <option value="done">Completed</option>                  
+                </select>
+
             </div>
 
             <div class="Properties">
-                <div class="Embedded_Device" data-status ="material-icons" title="task">
+                <div class="Embedded_Device_Signals" data-status ="task" title="Task">
                     <div class="category"></div>
                     <h2>Device Name</h2>
                     <ul class="Embedded_System">
@@ -51,7 +60,7 @@
                     </ul>
                 </div>
 
-                <div class="Embedded_Device_Signals" data-status="material-icons" title="running_with_errors">
+                <div class="Embedded_Device_Signals" data-status="running_with_errors" title="Errors">
                     <div class="category">
                     <h2>Device Signals</h2>
                     <ul class="Embedded System">
@@ -62,7 +71,7 @@
                 </div>
 
             
-                <div class="Embedded_Device_Signals" data-status="material-icons" title="done">
+                <div class="Embedded_Device_Signals" data-status="done" title="Completed">
                     <div class="category">
                     <h2>Device Status</h2>
                     <ul class="Embedded_System">
